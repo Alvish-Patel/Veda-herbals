@@ -1,0 +1,5 @@
+[10-May-2023 06:14:45 UTC] Generating shortcode on cart
+[10-May-2023 06:14:45 UTC] AGENT ->>>>>>>>>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+[10-May-2023 06:14:45 UTC] RELATIVE TO 
+[10-May-2023 06:14:45 UTC] Generating code OK ->>>>>>>>>>>> 12323
+[29-Aug-2023 08:58:48 UTC] external merchant setting is null, something wrong here: {"message":"There was an issue connecting to the Facebook API: Cannot create the API instance because the access token is missing.","object":{"plugin_version":"3.0.32","php_version":"7.4.33"}}
