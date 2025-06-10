@@ -9,12 +9,10 @@
    
 ![Project Screenshot](https://github.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/blob/master/Images/4.png)
 
-
 ### Step 2: Locate Your Auto Scaling Group
 1. From the list of ASGs, locate and click on the name of the Auto Scaling Group you want to modify.
 2. Under the **Instances** tab, find the instance that you want to move to standby.
    
-  ![Project Screenshot](https://github.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/blob/master/Images/ec2-Attach-to-Auto-Scaling-Group.png)
 
 ### Step 3: Place the Instance into Standby
 1. Select the instance you wish to put on standby.
@@ -23,10 +21,14 @@
 4. Confirm your action in the dialog box.
    - **With decrement**: The desired capacity will be reduced by one.
    - **Without decrement**: ASG retains its desired capacity and may launch a replacement.
+  
+     ![Project Screenshot](https://github.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/blob/master/Images/ec2-Attach-to-Auto-Scaling-Group.png)
 
 ### Step 4: Verify the Status
 1. Once the action is complete, the instance’s status will change to **Standby**.
 2. Monitor the ASG details to ensure that the instance has been successfully removed from the active pool.
+
+  ![Project Screenshot] (https://raw.githubusercontent.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/refs/heads/master/Images/action-dropdown-img.webp)
 
 ---
 
