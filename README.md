@@ -1,23 +1,13 @@
 
 # How to Place an EC2 Instance into Standby Mode in an AWS Auto Scaling Group
 
-When managing an Auto Scaling Group (ASG), you might want to temporarily remove (or “standby”) a particular instance from service without terminating it. This document explains the process to move an instance into standby mode using both the AWS Console and the AWS CLI.
-
----
-
-## 🔧 Prerequisites
-
-- An existing Auto Scaling Group with one or more EC2 instances.
-- Appropriate AWS IAM permissions to modify ASGs.
-- (Optional) AWS CLI installed and configured if you prefer command line commands.
-
----
-
-## ⚙️ Using the AWS Management Console
+## Using the AWS Management Console
 
 ### Step 1: Open the Auto Scaling Groups Console
 1. Log in to the [AWS Management Console](https://aws.amazon.com/console/).
 2. Navigate to **EC2** > **Auto Scaling Groups** from the left-hand menu.
+![Project Screenshot](https://github.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/blob/master/Images/4.png)
+
 
 ### Step 2: Locate Your Auto Scaling Group
 1. From the list of ASGs, locate and click on the name of the Auto Scaling Group you want to modify.
@@ -37,7 +27,7 @@ When managing an Auto Scaling Group (ASG), you might want to temporarily remove 
 
 ---
 
-## 💻 Using the AWS CLI
+## Using the AWS CLI
 
 ### Step 1: Identify the Instance and ASG
 Ensure you have the **Instance ID** and the **Auto Scaling Group Name**.
@@ -55,13 +45,5 @@ aws autoscaling enter-standby \
 aws autoscaling describe-auto-scaling-groups --auto-scaling-group-names my-asg
 ```
 Look for the **Standby** state in the instance details.
-
----
-
-## 📝 Additional Notes
-
-- **Reinstating an Instance**: Use the `exit-standby` command or Console to return the instance to service.
-- **Monitoring**: Ensure proper monitoring is in place while in standby.
-- **Impact**: Make sure standby instances do not disrupt load balancing or application behavior.
 
 ---
