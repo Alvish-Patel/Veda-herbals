@@ -7,7 +7,7 @@
 1. Log in to the [AWS Management Console](https://aws.amazon.com/console/).
 2. Navigate to **EC2** > **Auto Scaling Groups** from the left-hand menu.
    
-![Project Screenshot](https://github.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/blob/master/Images/4.png)
+![Project Screenshot](https://github.com/Awesome-SRE-Playground/EC2-Auto-Scaling-Group/blob/master/Images/Screenshot%20from%202025-06-10%2023-21-49.png)
 
 ### Step 2: Locate Your Auto Scaling Group
 1. From the list of ASGs, locate and click on the name of the Auto Scaling Group you want to modify.
